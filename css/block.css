@@ -1,0 +1,151 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font1);
+
+}
+
+.navigation {
+    font-family: var(--font1);
+    height: 74px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-left {
+    font-size: 20px;
+    display: flex;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 18px;
+}
+
+.nav-left ul li {
+
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    transition: all 0.3s ease-in-out;
+}
+.nav-left ul li:hover{
+    color:var(--main-bg-color);
+    background: var(--main-bg-color);
+    font-weight: bolder;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.nav-left ul li a img{
+    width: 25px;
+    height: 20px;
+}
+.btn {
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 2px solid;
+    border-radius: 25px;
+    background: all 0.2s ease;
+    background-color: #fff;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.content {
+    height:395px;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+}
+
+.content-left {
+    font-family: var(--font1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.content-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content-right img {
+    height: 255px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    padding-right: 30px;
+}
+.homearticles{
+height: 455px;
+background: red;
+}
+
+
+/* .footer {
+    height: 50px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+} */
+
+.nav-right button img {
+
+    width: 25px;
+    height: 23px;
+    padding-top: 3px;
+
+}
+
+.articale1{
+    padding-top: 40px;
+    background: #fff;
+    height: 400;
+    display: flex;
+    /* flex-direction: column; */
+     align-items: center; 
+    justify-content: center; 
+}
+.articale1 .left1 img{
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding-left:50px;
+}
+.articale1 .Right1{
+    padding-left:100px ;
+}
+.articale1 .Right1 a{
+    text-decoration: none;
+}
+.blog {
+    padding-top: 40px;
+    background: #fff;
+    height: 400;
+    display: flex;
+    /* flex-direction: column; */
+     align-items: center; 
+    justify-content: center; 
+}
