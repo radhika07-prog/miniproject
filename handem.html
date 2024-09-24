@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/video.css">
+    
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="leftnav flex-div">
+            <img src="images/menu-bar.png" class="menu">
+            <img src="images/video.png">
+            <h1>Tutorial</h1>
+        </div>
+        <div class="middlenav flex-div">
+            <div class="search-box">
+            <div class="search">
+            <input type="text" placeholder="search.." id="searchBar" name="searchBar" >
+            <img src="images/magnifying-glass.png">
+
+            </div>
+        </div>
+
+        
+        </div> 
+        </div>
+           
+        
+        <div class="rightnav flex-div">
+            <img src="images/home.png">
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="shorcut-link">
+            <a href="mehandi1.html"><img src="images/mehandi icon.jpeg"><p>Mehandi</p></a>
+            <a href="diy.html"><img src="images/arts-and-crafts.png"><p>DIY-Craft</p></a>
+            <a href=""><img src="images/macrame.png"><p>Macrame</p></a>
+            <a href=""><img src="images/resin.png"><p>Resin</p></a>
+            <a href="paper.html"><img src="images/paper-crafts.png"><p>Paper-Crafts</p></a>
+            <a href="handem.html"><img src="images/crochet.png"><p>Hand Embroidery</p></a>
+            <hr>
+        </div>
+        <div class="back">
+            <a href="project.html"><button>Back</button></a>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+              
+               <video src="video/em-1.mp4"  controls muted autoplay></video>
+            </div>
+          </div>
+          <div class="video-list">
+            <div class="vid active">
+              <video src="video/em-1.mp4"  ></video> 
+            </div><div class="vid">
+              <video src="video/em-2.mp4"  ></video> 
+            </div>
+            <div class="vid">
+              <video src="video/em-3.mp4" ></video> 
+            </div>
+            <div class="vid">
+              <video src="video/em-4.mp4"  ></video> 
+            </div>
+            <div class="vid">
+              <video src="video/em-5.mp4" ></video> 
+            </div>
+            <div class="vid">
+              <video src="video/em-6.mp4" ></video> 
+            </div>
+            <div class="vid">
+              <video src="video/em-7.mp4" ></video> 
+            </div>
+            </div>
+      </div>
+  <script>
+    let listvideo = document.querySelectorAll('.video-list .vid');
+    let mainvideo = document.querySelector('.main-video video');
+    // let title = document.querySelector('.video-list .vid');
+    listvideo.forEach(video =>{
+      video.onclick = ()=>{
+        listvideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+            let src= video.children[0].getAttribute('src');
+            mainvideo.src = src;
+  
+        };
+      };
+    });
+  </script>
+    </div>
+    <script src="js/project.js"></script>
+    
+</body>
+</html>
